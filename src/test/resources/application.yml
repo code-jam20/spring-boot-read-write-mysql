@@ -1,0 +1,17 @@
+spring.application.name: read-write-service
+
+server:
+  port: 8080
+  servlet:
+    context-path: /rw
+
+spring:
+  datasource:
+    primary:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      platform: MySQL
+    secondary:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      platform: MySQL
+
+

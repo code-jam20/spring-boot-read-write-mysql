@@ -1,0 +1,24 @@
+spring.application.name: read-write-service
+
+server:
+  port: 8080
+  servlet:
+    context-path: /rw
+
+spring:
+  datasource:
+    primary:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/rw_db?createDatabaseIfNotExist=true&serverTimezone=UTC
+      username: root
+      password: test1234
+      platform: MySQL
+    secondary:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/rw_db?createDatabaseIfNotExist=true&serverTimezone=UTC
+      username: root
+      password: test1234
+      platform: MySQL
+
+
+
